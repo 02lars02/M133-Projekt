@@ -1,1 +1,18 @@
-<p>detailview works!</p>
+<div class="products">
+    <img [src]="'/api/img/' + product.imageName" class="image" [alt]="product.productName">
+    <div>
+        <h1>{{product.productName}}</h1>
+        <p>{{product.description}}</p>
+        <p class="price">
+            <span>
+                CHF {{product.price | number : '1.2-2'}} 
+            </span>
+            <span class="priceSpecial" *ngIf="product.hasSpecialOffer">
+                CHF {{product.normalPrice | number : '1.2-2'}}
+            </span>
+        </p>
+        <button class="add">
+            In den Warenkorb
+        </button>
+    </div>
+</div>

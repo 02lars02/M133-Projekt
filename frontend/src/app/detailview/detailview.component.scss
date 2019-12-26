@@ -1,0 +1,25 @@
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: large;
+}
+
+.image {
+    margin: 15px;
+    width: 350px;
+}
+
+.price {
+    font-size: x-large;
+}
+
+.priceSpecial {
+    color: #ff0000;
+    text-decoration: line-through;
+}
+
+.add:hover {
+    cursor: pointer;
+}
