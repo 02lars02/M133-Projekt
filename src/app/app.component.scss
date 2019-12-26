@@ -1,0 +1,24 @@
+  
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#title {
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: xx-large;
+    color: white;
+    background-color: #ff0000;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
