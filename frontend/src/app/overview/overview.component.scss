@@ -1,0 +1,25 @@
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.productSpecial {
+    color: #ff0000;
+    text-decoration: line-through;
+}
+
+.card {
+    margin: 10px;
+    width: 250px;
+
+    Img {
+        width: 100%;
+    }
+
+    :hover {
+        cursor: pointer;
+    }
+}
