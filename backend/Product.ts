@@ -5,6 +5,7 @@ export class Product {
     normalPrice: number;
     imageName: string;
     description: string;
+    amount: number;
 
     get price(): number {
         if(this.hasSpecialOffer) {

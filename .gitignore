@@ -47,3 +47,6 @@ Thumbs.db
 
 
 /frontend/node_modules
+/frontend/package-lock.json
+/frontend/.editorconfig
+package-lock.json
