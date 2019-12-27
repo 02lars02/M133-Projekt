@@ -4,7 +4,9 @@
     </div>
   </header>
   <nav>
-    cart (comming soon)
+    <button id="cart" [routerLink]="['/cart']">
+      Warenkorb CHF {{cart.total | number : '1.2-2'}}
+    </button>
   </nav>
   <main>
     <router-outlet></router-outlet>

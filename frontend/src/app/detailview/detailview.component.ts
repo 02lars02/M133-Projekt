@@ -48,4 +48,9 @@ export class DetailviewComponent implements OnInit {
     product.description = data.description;
     return product;
   }
+
+  addToChart() {
+    this.httpClient.get(`/api/cart/add/${this.product.id}`).subscribe();
+    window.location.reload();
+  }
 }
