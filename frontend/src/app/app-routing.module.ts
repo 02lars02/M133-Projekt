@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'product/:id', component: DetailviewComponent },
   { path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent },
-  { path: '**', redirectTo: '/' }
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

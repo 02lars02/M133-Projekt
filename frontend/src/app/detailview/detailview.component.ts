@@ -29,7 +29,7 @@ export class DetailviewComponent implements OnInit {
       data => {
         this.product = data;
       }, err => {
-        console.log(err);
+        console.error(err);
       }
     );
   }

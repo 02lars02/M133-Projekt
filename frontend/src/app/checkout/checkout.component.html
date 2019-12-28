@@ -1,18 +1,20 @@
 <h1>Checkout</h1>
-<table>
-    <tr>
-        <th class="label">Vorname</th>
-        <th><input name="firstname" placeholder="Max"></th>
-    </tr>
-    <tr>
-        <th class="label">Nachname</th>
-        <th><input name="surename" placeholder="Muster"></th>
-    </tr>
-    <tr>
-        <th class="label">Email-Adresse</th>
-        <th><input name="mail" type="email" placeholder="Max.Muster@hotmail.com"></th>
-    </tr>
-    <tr>
-        <button class="button">Einkauf Abschliessen</button>
-    </tr>
-</table>
+<form (submit)="onSubmit()">
+    <table>
+        <tr>
+            <th class="label">Vorname</th>
+            <th><input name="firstname" placeholder="Max" required></th>
+        </tr>
+        <tr>
+            <th class="label">Nachname</th>
+            <th><input name="surename" placeholder="Muster" required></th>
+        </tr>
+        <tr>
+            <th class="label">Email-Adresse</th>
+            <th><input name="mail" type="email" placeholder="Max.Muster@hotmail.com" required></th>
+        </tr>
+        <tr>
+            <button class="button" type="submit">Einkauf Abschliessen</button>
+        </tr>
+    </table>
+</form>
