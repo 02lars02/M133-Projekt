@@ -24,6 +24,10 @@ header {
     border-color: green;
 }
 
+#cart:hover {
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     flex-direction: row-reverse;
