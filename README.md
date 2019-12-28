@@ -1,7 +1,11 @@
 # Dorfladen
 
-Angular project from Modul 133<br />
+Angular project from Modul 133.<br />
 
-To use it you have to start the server and the app:<br />
-"npm run localhost" runs the server on http://localhost:8080/<br />
-"npm run start" runs the app on http://localhost:4200/
+**Installation**
+1. open console and clone this *git@github.com:02lars02/M133-Projekt.git*
+2. change into folder M133-Projekt *cd M133-Projekt/*
+3. install all node_modules *npm run installAll*
+4. run the server on http://localhost:8080/ *npm run localhost*
+5. open new console and go again to folder M133-Projekt
+6. run the app on http://localhost:4200/ *npm run start*
