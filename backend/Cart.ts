@@ -34,4 +34,8 @@ export class Cart {
     getProduct(id) {
         return this.products.filter(x => x.id == id);
     }
+
+    removeAll() {
+        this.products = [];
+    }
 }

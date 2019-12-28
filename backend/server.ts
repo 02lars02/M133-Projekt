@@ -72,6 +72,15 @@ app.get('/api/cart/remove/:id', (req, res) => {
     }
 });
 
+app.get('/api/cart/removeAll', (req, res) => {
+    const cart = getCart(req);
+    console.log(cart);
+    cart.removeAll();
+    console.log(cart);
+    res.header({'Content-Type': 'application/json', 'status': 200});
+    res.send(cart);
+});
+
 app.listen(port, () => console.log(`server started and is listening on port ${port}`));
 
 function getCart(req) : Cart {
