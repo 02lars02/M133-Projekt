@@ -7,13 +7,15 @@ import { OverviewComponent } from './overview/overview.component';
 import { DetailviewComponent } from './detailview/detailview.component';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OverviewComponent,
     DetailviewComponent,
-    CartComponent
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

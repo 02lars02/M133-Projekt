@@ -29,4 +29,4 @@
         </tr>
     </tfoot>
 </table>
-<button [disabled]="cart.products.length == 0">Einkauf Abschliessen</button>
+<button [disabled]="cart.products.length == 0" [routerLink]="['/checkout']">Einkauf Abschliessen</button>
