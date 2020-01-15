@@ -15,7 +15,7 @@ export class CartComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   async ngOnInit() {
-    this.getCart().then(res => this.cart = res);
+    await this.getCart().then(res => this.cart = res);
   }
 
   async getCart() {

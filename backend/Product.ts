@@ -15,14 +15,6 @@ export class Product {
         }
     }
 
-    get total(): number {
-        if(this.specialOffer) {
-            return this.specialOffer * this.amount;
-        } else {
-            return this.normalPrice * this.amount;
-        }
-    }
-
     get hasSpecialOffer(): boolean {
         if(this.specialOffer) {
             return true
