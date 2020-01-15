@@ -5,8 +5,7 @@
     "scripts": {
         "start": "cd frontend && npm run start",
         "localhost": "tsc && node dist/server.js",
-        "test": "mocha",
-        "installAll": "cd frontend && npm install && cd .. && npm install"
+        "installAll": "npm install && cd frontend && npm install"
     },
     "author": "Lars Ghezzi",
     "license": "MIT",
