@@ -22,8 +22,10 @@
                     <button  (click)="add(product.id)">+</button>
                 </div>
             </td>
-            <p *ngIf="product.specialOffer">{{product.specialOffer * product.amount | number : '1.2-2'}}</p>
-            <p *ngIf="product.specialOffer == undefined">{{product.normalPrice * product.amount | number : '1.2-2'}}</p>
+            <td class="infos">
+                <p *ngIf="product.specialOffer">{{product.specialOffer * product.amount | number : '1.2-2'}}</p>
+                <p *ngIf="product.specialOffer == undefined">{{product.normalPrice * product.amount | number : '1.2-2'}}</p>
+            </td>
         </tr>
     </tbody>
     <tfoot>
