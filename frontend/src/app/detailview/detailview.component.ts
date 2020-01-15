@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
 })
 export class DetailviewComponent implements OnInit {
   id: string;
-  product: Product;
+  product: Product = new Product();
 
   constructor(private route: ActivatedRoute, private httpClient: HttpClient) { }
 

@@ -8,7 +8,7 @@ export class Product {
     amount: number;
 
     get price(): number {
-        if(this.hasSpecialOffer) {
+        if(this.specialOffer) {
             return this.specialOffer;
         } else {
             return this.normalPrice;

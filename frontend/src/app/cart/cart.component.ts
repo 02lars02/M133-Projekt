@@ -10,13 +10,12 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  cart: Cart;
+  cart: Cart = new Cart();
 
   constructor(private httpClient: HttpClient) { }
 
   async ngOnInit() {
-    this.cart = new Cart();
-    this.cart = await this.getCart();
+    this.getCart().then(res => this.cart = res);
   }
 
   async getCart() {

@@ -3,7 +3,7 @@ import { Product } from './Product';
 export class Cart {
     products: Product[] = [];
 
-    get total() {
+    get total(): number {
         let sum: number = 0.0;
         this.products.forEach(product => sum += product.total);
         return sum;
