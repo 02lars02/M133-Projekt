@@ -5,7 +5,13 @@ export class Cart {
 
     get total(): number {
         let sum: number = 0.0;
-        this.products.forEach(product => sum += product.total);
+        this.products.forEach(product => {
+            if(product.specialOffer) {
+                sum += product.specialOffer * product.amount;
+            } else {
+                sum += product.normalPrice * product.amount;
+            }
+        });
         return sum;
     }
 
